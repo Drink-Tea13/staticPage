@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>宅蛙首页</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery_lazyload.min.js"></script>
+</head>
+
+<body>
+    <!-- 顶部 -->
+    <div class="header">
+        <!-- 顶部安全区域 -->
+        <div class="header_safe">
+            <!-- LOGO图 -->
+            <a href="">
+                <img src="images/logo.png" alt="">
+            </a>
+            <!-- 导航栏列表 -->
+            <ul class="header_list">
+                <li style=" border-bottom: 2px solid rgb(255,209,0)">
+                    <a href="" style="color:rgb(255,209,0)">首页</a>
+                </li>
+                <li>
+                    <a href="">效果图</a>
+                </li>
+                <li>
+                    <a href="">装修案例</a>
+                </li>
+                <li>
+                    <a href="">装修攻略</a>
+                </li>
+                <li>
+                    <a href="">找帮手</a>
+                </li>
+                <li>
+                    <a href="">宅生活</a>
+                </li>
+            </ul>
+            <!-- 顶部搜索框 -->
+            <form action="" class="header_search">
+                <input type="text" placeholder="图片">
+                <a href="" id="header_search_img">
+                    <img src="images/search.png" alt="">
+                </a>
+            </form>
+            <!-- 顶部发布按钮 -->
+            <div class="header_put">
+                <span>发布</span>
+                <!-- 发布按钮隐藏栏 -->
+                <div class="header_put_txt">
+                    <img src="images/angle.png" alt="">
+                    <div>
+                        <a href="" id="header_put_txt_pic" style="border-bottom: 1px solid #dedede">图片</a>
+                        <a href="" id="header_put_txt_title">文章</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 登录注册 -->
+            <div class="header_login">
+                <a href="Login&Register.html">登录</a>
+                <a href="">|</a>
+                <a href="Login&Register.html">注册</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 轮播图 -->
+    <div class="banner_box">
+        <!-- 轮播图主体 -->
+        <div class="banner">
+            <img src="images/banner1.jpg" alt="">
+            <img src="images/banner2.jpg" alt="">
+            <img src="images/banner3.jpg" alt="">
+            <img src="images/banner4.jpg" alt="">
+            <img src="images/banner5.jpg" alt="">
+            <!-- 切换上下张按钮 -->
+            <div class="banner_btn" id="banner_prev"></div>
+            <div class="banner_btn" id="banner_next"></div>
+            <!-- 轮播图底部小圆点 -->
+            <ul class="banner_dot">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 风格分类 -->
+    <div class="classify">
+        <div class="cla_hot">
+            <div class="cla_hot_left">
+                <span>热门</span>
+            </div>
+            <div class="cla_hot_right">
+                <a href="">客厅</a>
+                <a href="">吊顶设计</a>
+                <a href="">多样卫生间</a>
+                <a href="">百变卧室</a>
+                <a href="">完美厨房</a>
+                <a href="">电视背景墙</a>
+                <a href="" style="color:#ff9c00">儿童房</a>
+                <a href="">简约三居房</a>
+                <a href="">最爱阳台</a>
+                <a href="" style="color:#ff9c00">入户玄关</a>
+                <a href="">创意收纳</a>
+                <a href="">衣帽</a>
+            </div>
+        </div>
+        <div class="cla_hot cla_size">
+            <div class="cla_hot_left">
+                <span>户型</span>
+            </div>
+            <div class="cla_hot_right">
+                <a href="">客厅</a>
+                <a href="">吊顶设计</a>
+                <a href="">多样卫生间</a>
+                <a href="">百变卧室</a>
+                <a href="">完美厨房</a>
+                <a href="">电视背景墙</a>
+                <a href="" style="color:#ff9c00">儿童房</a>
+                <a href="">简约三居房</a>
+                <a href="">最爱阳台</a>
+                <a href="" style="color:#ff9c00">入户玄关</a>
+                <a href="">创意收纳</a>
+                <a href="">衣帽</a>
+            </div>
+        </div>
+        <div class="cla_hot cla_style">
+            <div class="cla_hot_left">
+                <span>风格</span>
+            </div>
+            <div class="cla_hot_right">
+                <a href="">客厅</a>
+                <a href="">吊顶设计</a>
+                <a href="">多样卫生间</a>
+                <a href="">百变卧室</a>
+                <a href="">完美厨房</a>
+                <a href="">电视背景墙</a>
+                <a href="" style="color:#ff9c00">儿童房</a>
+                <a href="">简约三居房</a>
+                <a href="">最爱阳台</a>
+                <a href="" style="color:#ff9c00">入户玄关</a>
+                <a href="">创意收纳</a>
+                <a href="">衣帽</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 中间缩略图 -->
+    <div class="draft">
+        <div class="draft_con">
+            <div class="draft_con_pic">
+                <img src="images/draft1.jpg" alt="">
+                <img src="images/draft2.jpg" alt="">
+                <img src="images/draft3.jpg" alt="">
+                <img src="images/draft4.jpg" alt="">
+                <img src="images/draft5.jpg" alt="">
+                <img src="images/draft6.jpg" alt="">
+            </div>
+            <p class="draft_con_txt">清新 ,&nbsp;&nbsp;&nbsp;邂逅别样的文艺家居</p>
+            <div class="draft_con_ico">
+                <img src="images/draft1.png" alt="">
+                <img src="images/draft2.png" alt="">
+                <img src="images/draft4.png" alt="">
+                <img src="images/draft3.png" alt="">
+                <img src="images/draft4.png" alt="">
+                <img src="images/draft1.png" alt="">
+            </div>
+        </div>
+        <div class="draft_con">
+            <div class="draft_con_pic">
+                <img src="images/draft1.jpg" alt="">
+                <img src="images/draft2.jpg" alt="">
+                <img src="images/draft3.jpg" alt="">
+                <img src="images/draft4.jpg" alt="">
+                <img src="images/draft5.jpg" alt="">
+                <img src="images/draft6.jpg" alt="">
+            </div>
+            <p class="draft_con_txt">新中式 ,&nbsp;&nbsp;&nbsp;方寸之间尽是优雅</p>
+            <div class="draft_con_ico">
+                <img src="images/draft1.png" alt="">
+                <img src="images/draft2.png" alt="">
+                <img src="images/draft4.png" alt="">
+                <img src="images/draft3.png" alt="">
+                <img src="images/draft4.png" alt="">
+                <img src="images/draft1.png" alt="">
+            </div>
+        </div>
+        <div class="draft_con">
+            <div class="draft_con_pic">
+                <img src="images/draft1.jpg" alt="">
+                <img src="images/draft2.jpg" alt="">
+                <img src="images/draft3.jpg" alt="">
+                <img src="images/draft4.jpg" alt="">
+                <img src="images/draft5.jpg" alt="">
+                <img src="images/draft6.jpg" alt="">
+            </div>
+            <p class="draft_con_txt">现代 ,&nbsp;&nbsp;&nbsp;优雅自成一派</p>
+            <div class="draft_con_ico">
+                <img src="images/draft1.png" alt="">
+                <img src="images/draft2.png" alt="">
+                <img src="images/draft4.png" alt="">
+                <img src="images/draft3.png" alt="">
+                <img src="images/draft4.png" alt="">
+                <img src="images/draft1.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- 主体内容 -->
+    <div class="content_safe">
+        <!-- 达人榜单 -->
+        <div class="con_rank_box">
+            <div class="con_rank">
+                <h4> 七日达人榜单</h4>
+                <div class="con_rank_user">
+                    <img src="images/rank1.jpg" alt="">
+                    <span id="con_rank_num">1</span>
+                    <div class="con_rank_name">
+                        <span class="con_rank_name1">VQ694610...</span>
+                        <span>粉丝&nbsp;&nbsp;&nbsp;1</span>
+                    </div>
+                    <a href="">关注</a>
+                </div>
+                <div class="con_rank_user">
+                    <img src="images/rank2.png" alt="">
+                    <span id="con_rank_num">2</span>
+                    <div class="con_rank_name">
+                        <span class="con_rank_name1">建硕家具设计</span>
+                        <span>粉丝&nbsp;&nbsp;&nbsp;0</span>
+                    </div>
+                    <a href="">关注</a>
+                </div>
+                <div class="con_rank_user">
+                    <img src="images/rank1.jpg" alt="">
+                    <span id="con_rank_num">3</span>
+                    <div class="con_rank_name">
+                        <span class="con_rank_name1">刘斌</span><br>
+                        <span>粉丝&nbsp;&nbsp;&nbsp;1</span>
+                    </div>
+                    <a href="">关注</a>
+                </div>
+                <div class="con_rank_user">
+                    <img src="images/rank2.png" alt="">
+                    <span id="con_rank_num" style="background: #999">4</span>
+                    <div class="con_rank_name">
+                        <span class="con_rank_name1">蚁装科技</span><br>
+                        <span>粉丝&nbsp;&nbsp;&nbsp;0</span>
+                    </div>
+                    <a href="">关注</a>
+                </div>
+                <div class="con_rank_user">
+                    <img src="images/rank1.jpg" alt="">
+                    <span id="con_rank_num" style="background: #999">5</span>
+                    <div class="con_rank_name">
+                        <span class="con_rank_name1">四川卓巧装饰</span><br>
+                        <span>粉丝&nbsp;&nbsp;&nbsp;1</span>
+                    </div>
+                    <a href="">关注</a>
+                </div>
+                <div class="con_rank_code">
+                    <img src="images/rank3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- 主体头部 -->
+        <div class="con_header">
+            <div class="con_header_left">
+                <a href="" style="border-bottom:3px solid #ff9c01;
+                color:#333333">全部</a>
+                <a href="">案例</a>
+                <a href="">攻略</a>
+                <a href="">宅生活</a>
+            </div>
+            <div class="con_header_right">
+                <a href="">最热</a>
+                <a href="" style="font-size: 5px;">|</a>
+                <a href="" style="color:#666">最新</a>
+            </div>
+        </div>
+        <!--主体中部 -->
+        <ul class="content"></ul>
+    </div>
+    <!-- 返回顶部按钮 -->
+    <div class="backTop">
+        <div class="backTop_txt">返回顶部</div>
+    </div>
+</body>
+<script src="js/index_content.js"></script>
+<script src="js/index.js"></script>
+
+</html>
